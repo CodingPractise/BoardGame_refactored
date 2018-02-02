@@ -1,0 +1,19 @@
+Objects that talk domain:
+-------------------------
+Changed name of amount updation methods in Player.java
+Separated reading and validating configurations
+
+Objects that are loose and discrete
+------------------------------------
+Configuration made part of Game - Removed associated changes from Game Controller
+   Game will be created by : first loading configuration, then players and then board and then dice.
+
+Design patterns for win
+------------------------------------
+Made dice singleton pattern to avoid user from making objects of it
+
+Others
+------------------------------------
+Though file name was passed to accessProperty, file name was hard coded in the method
+Removed getConfiguration method - as the same purpose is served by getInstance method
+Made loading of default configuration as default operation if user has provided invalid configurations
